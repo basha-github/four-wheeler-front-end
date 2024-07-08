@@ -5,19 +5,17 @@ import { FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
 export default function Login() {
-    const myNav = useNavigate();
-    const handleSubmitt = (e:FormEvent)=>{
-        e.preventDefault();
-        const url = "http://localhost:9090/four/login?uname=basha&password=1234";
-        axios.get(url).then(res =>{
-            console.log("from spring boot --->res--."+res.data);
-if(res.data == true){
-    myNav("/home");
-}
-        });
-      
-
-    };
+  const myNav = useNavigate();
+  const handleSubmitt = (e: FormEvent) => {
+    e.preventDefault();
+    const url = "http://localhost:9090/four/login?uname=basha&password=1234";
+   // axios.get(url).then((res) => {
+     // console.log("from spring boot --->res--." + res.data);
+      //if (res.data == true) {
+        myNav("/home");
+      //}
+    //});
+  };
   return (
     <div>
       <h3 className="text-center text-white pt-5">Login form</h3>
