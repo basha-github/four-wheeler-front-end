@@ -3,7 +3,7 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Login from "./components/Login";
 import Home from "./components/Home";
-import NavBar from "./components/NavBar";
+//import NavBar from "./components/NavBar";
 import AddNewVehicle from "./components/AddNewVehicle";
 import AllVehicles from "./components/AllVehicles";
 import ContactUs from "./components/ContactUs";
@@ -13,7 +13,7 @@ export default function App() {
     <div>
 
       <BrowserRouter>
-      <NavBar />
+     
       <Routes>
         <Route path="/home" element={<Home />}></Route>
         <Route  path="/" element={<Login />}/>

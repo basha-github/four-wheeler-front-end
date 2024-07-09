@@ -1,7 +1,12 @@
 //import React from 'react'
 
+import NavBar from "./NavBar";
+
 export default function ContactUs() {
   return (
-    <div>ContactUs</div>
+    <div>
+      <NavBar />
+      ContactUs
+      </div>
   )
 }
